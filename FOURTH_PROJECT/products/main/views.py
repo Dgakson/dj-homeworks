@@ -31,7 +31,7 @@ class ProductDetailsView(APIView):
         try:
             product = Product.objects.get(pk=product_id)
 
-            ser = ProductDetailsSerializer(product, many=False)
+            ser = ProductDetailsSerializer(product)
             return Response(ser.data)
         except Product.DoesNotExist:
             raise Http404('Product not found')
@@ -64,6 +64,5 @@ class ProductFilteredReviews(APIView):
 
         # Сериализуем данные
         serializer = ReviewSerializer(details, many=True)
-
         # Возвращаем сериализованные данные в ответе
         return Response(serializer.data)
