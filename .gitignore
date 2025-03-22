@@ -1,1 +1,7 @@
-.idea
+.idea/
+.venv/
+__pycache__/
+.vscode/
+FIFTH_PROJECT/.venv/
+/FIFTH_PROJECT/.venv/
+SIXTH_PROJECT/.venv/
