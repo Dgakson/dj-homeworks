@@ -5,3 +5,4 @@ __pycache__/
 FIFTH_PROJECT/.venv/
 /FIFTH_PROJECT/.venv/
 SIXTH_PROJECT/.venv/
+SIXTH_PROJECT/.env
